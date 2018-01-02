@@ -1,0 +1,25 @@
+.footer { padding: 20px; background-color: #999; height: 160px; margin-top: 50px; }
+
+.footer .ul { margin: 0 auto; width: 1080px; overflow: hidden; position: relative; height: 104px; }
+
+.footer .ul ul { width: 5400px; position: absolute; left: 0px; top: 0px; }
+
+.footer .ul ul li { width: 330px; float: left; font-size: 12px; margin: 6px 15px; color: #fff; }
+
+.footer .ul ul li p { width: 330px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+
+.footer .ul ul li a { color: yellow; }
+
+.footer2 { height: 182px; }
+
+.footer2 h3 { height: 45px; margin-top: 0; line-height: 45px; font-size: 12px; text-align: center; background-color: #eee; }
+
+.footer2 h3 a { padding: 0px 3px; color: #000; }
+
+.footer2 p { text-align: center; font-size: 12px; }
+
+.footer2 div { text-align: center; padding-bottom: 18px; }
+
+.footer2 div img { display: inline-block; margin-right: 6px; }
+
+.bot { cursor: pointer; width: 40px; height: 40px; background-color: #999; font-size: 14px; color: #fff; line-height: 20px; text-align: center; position: fixed; bottom: 2px; right: 2px; display: none; }

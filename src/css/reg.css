@@ -1,0 +1,49 @@
+.container2 { width: 1000px; margin: 0 auto; }
+
+.header { background-color: #f5f5f5; }
+
+.header .container2 { height: 122px; border-bottom: 1px solid #e7e7e7; position: relative; }
+
+.header .container2 a { display: inline-block; width: 240px; }
+
+.header .container2 a img { margin-top: 28px; height: 54px; }
+
+.header .container2 .fr { margin-top: 20px; }
+
+.main { padding-top: 20px; }
+
+.main .container2 .l { margin-top: 20px; width: 586px; display: inline-block; }
+
+.main .container2 .r { display: inline-block; border: 1px solid #f1f1f1; border-top: 2px solid #fe587e; width: 370px; height: 550px; padding: 22px; }
+
+.main .container2 .r h3 { padding-bottom: 30px; }
+
+.main .container2 .r h3 a { font-size: 20px; font-weight: bold; color: #444; position: relative; }
+
+.main .container2 .r h3 a span { position: absolute; top: 2px; right: -225px; font-size: 12px; font-weight: normal; }
+
+.main .container2 .r h3 a:hover { color: #fe587e; text-decoration: none; }
+
+.main .container2 .r .form-group { padding-bottom: 21px; }
+
+.main .container2 .r .form-group .form-control { width: 300px; height: 38px; }
+
+.main .container2 .r .form-group .yzm { width: 123px; float: left; margin-right: 12px; }
+
+.main .container2 .r .form-group #v_container { float: left; display: inline-block; }
+
+.main .container2 .r .btn-default { background-color: #fcfcfc; }
+
+.main .container2 .r .reg { width: 300px; height: 40px; color: #fff; background-color: #fe587e; font-size: 16px; margin-top: 12px; margin-bottom: 6px; }
+
+.main .container2 .r .checkbox { font-size: 12px; line-height: 20px; color: #777; }
+
+.main .container2 .r .checkbox input { margin-right: 4px; }
+
+.main .container2 .r .hz p { padding: 8px 3px 1px 3px; font-size: 12px; color: #999; }
+
+.main .container2 .r .hz a { display: inline-block; width: 16px; height: 16px; }
+
+.main .container2 .r .hz .qq { background: url(../img/icon-qq.png) no-repeat; margin-right: 14px; }
+
+.main .container2 .r .hz .wx { background: url(../img/weixin.png) no-repeat; background-size: 16px 16px; }
