@@ -1,0 +1,61 @@
+#header{
+    border:1px solid #ccc;height: 255px;
+    color:#444;
+    .header1{
+        background-color: #eae9e9;
+        .contain{
+            height: 30px;
+            line-height: 30px;
+            h3{font-size: 12px;width: 40%;float: left;
+                line-height: 30px;
+                i{color:#fe587e;}
+                a{margin-left: 16px;}
+            }
+            ul{float: right;font-size: 12px;
+                li{ float: left;
+                    a{padding: 0px 8px;}
+                }  
+            }
+        }
+        a{cursor:pointer}
+        a:hover{text-decoration: none;color:#fe587e;}
+    }
+    .header2{font-family: arial;
+        .act{
+            img{}
+        }
+        .search{
+            padding: 24px 0px;
+            .logo{float: left;
+                display: inline-block;
+                img{width: 240px;height: 53px;} 
+            }
+            .mid{width: 456px;height: 64px;  display: inline-block;  float: left;margin-left: 175px;
+                input{width: 386px;height: 34px;border:2px solid #fe587e;padding-left: 38px;float: left;background: url(../img/jlt.png) no-repeat 9px -68px;}
+                button{width: 70px;height: 34px;background-color: #fe587e;color:#fff;font-size: 14px;float: left;}
+                p{line-height: 44px;a{margin: 0px 6px;color:#999;}}
+            }
+            .right{
+                padding-left: 20px;float: left;
+                a{display: inline-block;width: 132px;height: 36px;border:1px solid #fe587e;border-radius:10px;box-shadow:0 3px 3px #fe587e;text-align: center;line-height: 36px;color:#fe587e;font-size: 14px;margin-left: 20px;}
+                a:hover{text-decoration: underline;}
+            }
+        }
+        
+    }
+    .nav3{background-color: #F7F7F7;border-bottom:2px solid #fe587e;
+        .contain{position: relative;height: 42px; line-height: 42px;
+            .fenlei{width: 230px;height: 450px;border:1px solid #ccc;position: absolute;left: 0px;top: 42px;display: none;}
+            .all_nav{width: 230px;height: 42px;float: left;background-color: #fe587e;font-size: 14px;text-align: center;color:#fff;}
+            .ul_nav{float: left;
+                li{float: left;font-size: 15px;
+                    a{padding: 0px 20px;color:#444;}
+                    a:hover{color:#fe587e;}
+                }
+            }
+            #cart{width: 120px;height: 40px;float: right;color:#fff;font-size: 14px;line-height: 40px;text-align: center;background:#fe587e url(../img/jlt.png) no-repeat 10px -90px;
+                
+            }
+        }
+    }
+}

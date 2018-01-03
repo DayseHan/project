@@ -1,0 +1,63 @@
+#header { border: 1px solid #ccc; height: 255px; color: #444; }
+
+#header .header1 { background-color: #eae9e9; }
+
+#header .header1 .contain { height: 30px; line-height: 30px; }
+
+#header .header1 .contain h3 { font-size: 12px; width: 40%; float: left; line-height: 30px; }
+
+#header .header1 .contain h3 i { color: #fe587e; }
+
+#header .header1 .contain h3 a { margin-left: 16px; }
+
+#header .header1 .contain ul { float: right; font-size: 12px; }
+
+#header .header1 .contain ul li { float: left; }
+
+#header .header1 .contain ul li a { padding: 0px 8px; }
+
+#header .header1 a { cursor: pointer; }
+
+#header .header1 a:hover { text-decoration: none; color: #fe587e; }
+
+#header .header2 { font-family: arial; }
+
+#header .header2 .search { padding: 24px 0px; }
+
+#header .header2 .search .logo { float: left; display: inline-block; }
+
+#header .header2 .search .logo img { width: 240px; height: 53px; }
+
+#header .header2 .search .mid { width: 456px; height: 64px; display: inline-block; float: left; margin-left: 175px; }
+
+#header .header2 .search .mid input { width: 386px; height: 34px; border: 2px solid #fe587e; padding-left: 38px; float: left; background: url(../img/jlt.png) no-repeat 9px -68px; }
+
+#header .header2 .search .mid button { width: 70px; height: 34px; background-color: #fe587e; color: #fff; font-size: 14px; float: left; }
+
+#header .header2 .search .mid p { line-height: 44px; }
+
+#header .header2 .search .mid p a { margin: 0px 6px; color: #999; }
+
+#header .header2 .search .right { padding-left: 20px; float: left; }
+
+#header .header2 .search .right a { display: inline-block; width: 132px; height: 36px; border: 1px solid #fe587e; border-radius: 10px; box-shadow: 0 3px 3px #fe587e; text-align: center; line-height: 36px; color: #fe587e; font-size: 14px; margin-left: 20px; }
+
+#header .header2 .search .right a:hover { text-decoration: underline; }
+
+#header .nav3 { background-color: #F7F7F7; border-bottom: 2px solid #fe587e; }
+
+#header .nav3 .contain { position: relative; height: 42px; line-height: 42px; }
+
+#header .nav3 .contain .fenlei { width: 230px; height: 450px; border: 1px solid #ccc; position: absolute; left: 0px; top: 42px; display: none; }
+
+#header .nav3 .contain .all_nav { width: 230px; height: 42px; float: left; background-color: #fe587e; font-size: 14px; text-align: center; color: #fff; }
+
+#header .nav3 .contain .ul_nav { float: left; }
+
+#header .nav3 .contain .ul_nav li { float: left; font-size: 15px; }
+
+#header .nav3 .contain .ul_nav li a { padding: 0px 20px; color: #444; }
+
+#header .nav3 .contain .ul_nav li a:hover { color: #fe587e; }
+
+#header .nav3 .contain #cart { width: 120px; height: 40px; float: right; color: #fff; font-size: 14px; line-height: 40px; text-align: center; background: #fe587e url(../img/jlt.png) no-repeat 10px -90px; }
