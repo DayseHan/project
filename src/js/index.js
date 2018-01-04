@@ -1,9 +1,40 @@
 jQuery(function($){
     // ajax加载尾部
-    $('#footer').load('../html/footer.html .footer0',foot);
-    $('#header').load('../html/header.html .header');
+    $('#footer').load('../html/footer.html .footer0',function(){
+        foot();
+        $('#link').load('../html/footer.html .link');
+    });
+
+    $('#header').load('../html/header.html .header',function(){
+        head();
+
+        var $nav3 = $('#header').find('.nav3');
+
+        $nav3.find('.all_nav').on('mouseout',function(){
+            timer1 = setTimeout(function(){
+                $nav3.find('.two').show();
+            },100)
+        })
+
+        $nav3.find('.two').on('mouseleave',function(){
+        timer3 = setTimeout(function(){
+            $(this).next().hide();
+            $(this).show();
+        }.bind(this),100);
+        });
+
+        $nav3.find('.three').on('mouseout',function(){
+            var $this = $(this);
+            $this.prev().show();
+            $this.hide();
+        });
+
+   });
+
+
     //楼梯
     $('#ul_stair').lhjStair();
+    
     // 大的轮播图
     $('#banner').find('.banner').lhjCarousel({
         width:740,

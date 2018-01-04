@@ -1,15 +1,64 @@
-body {
+body{
     background: #f5f5f5;
     font-family: "Microsoft Yahei";
 }
 #main{
-    .top{
-        height: 60px;line-height: 60px;font-size: 14px;padding-left: 28px;
-        i{float: right;
-            a{background: url(../img/qq.gif) no-repeat;padding-left: 28px;}
+    .main1{
+        height: 60px;line-height: 60px;font-size: 12px;padding-left: 28px;color:#777;
+        i{float: right;margin-right: 18px;
+            a{background: url(../img/qq.gif) no-repeat;padding-left: 28px;color:#777;}
         }
     }
-    .l{width: 220px;
+    .main2{
+        height: 540px;border:1px solid #ccc;
+        .l{width: 365px;height: 513px;border:1px solid #ccc;}
+        .m{padding-left: 20px;padding-top: 8px;
+            width: 555px;height: 487px;border:1px solid #ccc;
+            .title{font-size: 16px;color:#444;height: 24px;line-height: 38px;}
+            .price1{font-size: 13px;line-height: 65px;
+                span{padding-left: 20px;text-decoration: line-through;}
+                i{float: right;margin-right: 28px;}
+            }
+            .price2{span{padding-left: 20px;font-size: 26px;line-height: 26px;color:#fe587e;line-height: 22px;}}
+            .sell{line-height: 50px;
+                span,i{color:#fe587e;padding-right: 150px;font-size: 13px;}
+            }
+            .serve{line-height: 48px;
+                a{font-size: 13px;margin-left: 30px;}
+                i{color:#fff;width: 18px;border-radius:5px;padding: 3px;
+                height: 18px}
+                .i1{background: #f76514;}
+                .i2{background: #00c613;}
+                .i3{background: #5237e2;}
+            }
+            .num{line-height: 31px;
+                padding-top: 42px;
+                span{float: left;}
+                .jian{width: 20px;height: 30px;margin-left: 68px;cursor: pointer;}
+                input{width: 30px;height: 30px;padding-left: 11px;border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;font-size: 14px;color:#444;}
+                .jia{width: 20px;height: 30px;cursor: pointer;}
+            }
+            .btn{line-height: 108px;
+                button{width: 142px;height: 38px;border-radius:5px;background-color: #ffeded;color:#fe587e;border: 1px solid #fe587e;line-height: 38px;text-align: center;margin-left: 18px;cursor: pointer;}
+                .btn2{line-height: 22px;
+                    background: #fe587e;border: 1px solid #fe587e;color:#fff;font-style: 13px;
+                }
+            }
+        }
+        .r{width: 260px;height: 540px;border:1px solid #ccc;
+            .top{width: 260px;height: 92px;}
+            .bottom{
+                width: 258px;height: 300px;
+            }
+            .img{
+                width: 260px;
+                height: 132px;
+            }
+        }
+    }
+    .main3{
+        h3{background-color: #fff;border-top: 2px solid #ccb;margin-top: 8px;font-size: 17px;height: 42px;padding-left: 18px;line-height: 42px;margin-bottom: 20px;}
+    .l{width: 228px;min-height: 30px;
         h1{width: 190px;background-color: #fe587e;line-height: 38px;font-size: 14px;color:#fff;padding-left: 15px;}
         .ul{width: 190px;
             li{height: 37px;line-height: 37px;font-size: 14px;padding-left: 22px;border-top: 0 none;}
@@ -37,49 +86,27 @@ body {
             }
         }
     }
-    .r{width: 962px;
-        .lis{overflow: hidden;width: 962px;
-            margin-top: 17px;
-            span{width: 80px; float: left;color: #d7232a;margin: 3px 0;font-weight: bold;font-size: 12px;
-            }
-            ul{
-                li{float: left;margin: 0px 16px;font-size: 14px;}
-                li:nth-child(1){background-color: #fe587e;width: 52px;height: 24px;border-radius:5px;text-align: center;line-height: 24px;
-                    a{color:#fff;}
-                }
-            }
-        }
-        .sort{margin-top:43px;
-            span{color:#666;}
-            
-        }
-        .list{
-            ul{margin-top: 38px;
-                li{width: 232px;height: 357px;border:1px solid #ccc;background-color: #fff;margin-right: 5px;position: relative;padding: 12px 17px;
-                    .img{display: block;width: 180px;height: 180px;border:1px solid #ccc;
-                    }
-                    .qty{width: 252px;height: 36px;position: absolute;left: 18px;top: 155px;
-                        i{display: inline-block;width: 150px;height: 20px;border-radius:10px;background: url(../img/jdtbg.png) no-repeat}
-                        span{display: inline-block;float: right;margin-right: 26px;}
-                    }
 
-                    .money{
-                        padding: 13px 0px;
-                        .sp1{color:#fe587e;font-size: 22px;margin-right: 2px;}
-                        .sp2{color:#999;font-size: 14px;text-decoration: line-through;}
-                        .sp3,.sp4{font-size: 12px;margin-right: 48px;}
-                        i{display: inline-block;margin-top: 12px;width: 80px;height: 32px;text-align: center;background-color: #fe587e;border-radius:5px;line-height: 32px;a{color:#fff;}}
-                    }
-                    p{a{font-size: 15px;color:#444;line-height: 25px;height: 50px;
-                        }}
-                }
-                li:hover{
-                    box-shadow: 0px 0px 5px #ccc;
-                    transform: translate(0,-10px);
-                    transition: .2s all linear;
-                }
 
+        .r{width: 962px;min-height: 600px;
+            >ul{background-color: #fff;font-size: 13px; margin-bottom: 12px;padding-left: 12px;height: 38px;line-height: 38px;
+                li{padding: 0px 14px;border-right: 1px solid #f1f1f1;}
+                .active{border-top:2px solid #bbc;}
+                i{float: right;margin-right: 18px;
+                    a{background: url(../img/qq.gif) no-repeat;padding-left: 28px;color:#777;}
+                }
             }
+            h3{border-top: 2px solid #58bc58;}
+            .deta{}
+            .comment{display: none;
+                ul{li{margin-bottom: 12px;background-color: #fff;padding: 0px 20px;height: 34px;line-height: 34px;}}
+                .sub{margin-top: 40px;
+                    textarea{width: 100%;font-size: 15px;padding: 10px;border-radius:10px;}
+                    button{float: right;margin-right: 28px;width: 80px;height: 32px;background-color: #58bc58;border-radius:5px;margin-top: 20px;cursor: pointer;}
+                    
+                }
+            }
+            .req{display: none;}
         }
     }
 }

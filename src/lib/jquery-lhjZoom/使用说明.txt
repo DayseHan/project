@@ -1,0 +1,140 @@
+  下载插件  (0)
+简要教程
+这是一款带放大镜功能的jQuery轮播图插件。该jQuery轮播图在布局上带有缩略图，并且在鼠标hover大图时，带有漂亮的放大镜效果。
+ 使用方法
+在页面中引入style.css，jQuery和zoom-slideshow.js文件。
+<link href="css/style.css" rel="stylesheet">
+<script src="js/jquery.min.js"></script>
+<script src="js/zoom-slideshow.js"></script>
+ HTML结构
+
+该jQuery轮播图的基本HTML结构如下：
+<div id="wrapper">
+  <div id="content">
+    <!--大图预览区-->
+    <div id="view">
+      <img src="media/img/Desert.jpg" alt="" />
+    </div>
+    <!--缩略图-->
+    <div id="thumbs">
+      <!--左箭头导航-->
+      <div id="nav-left-thumbs"><</div>
+      <div id="pics-thumbs">
+        <img src="media/img/nature1.jpg" alt="Nature1" />
+        <img src="media/img/nature2.jpg" alt="Nature2" />
+        <img src="media/img/nature3.jpg" alt="Nature3" />
+        <img src="media/img/nature4.jpg" alt="Nature4" />
+        <img src="media/img/nature5.jpg" alt="Nature5" />
+        <img src="media/img/nature6.jpg" alt="Nature6" />
+        <img src="media/img/nature7.jpg" alt="Nature7" />
+        <img src="media/img/nature8.jpg" alt="Nature8" />
+        <img src="media/img/nature9.jpg" alt="Nature9" />
+      </div>
+      <!--右箭头导航-->
+      <div id="nav-right-thumbs">></div>
+    </div>
+  </div>
+</div>      
+然后使用一个<div>元素作为放大镜的容器。
+<div id="zoom"></div>                  
+ CSS样式
+
+该轮播图和放大镜的主要CSS样式如下，你也可以自定义样式。
+#zoom {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+  display: none;
+}
+ 
+#view {
+  margin: 30px 0;
+  height: 384px;
+}
+ 
+#view img {
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,.6);
+}
+ 
+#thumbs {
+  position: relative;
+  margin: 20px 0;
+}
+ 
+#nav-left-thumbs { left: 70px; }
+ 
+#nav-right-thumbs { right: 70px; }
+ 
+#nav-left-thumbs, #nav-right-thumbs {
+  position: absolute;
+  top: 30px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,.6);
+  font-size: 1em;
+  font-weight: bold;
+  color: #999;
+  text-shadow: 0 0 10px rgba(0,0,0,.5);
+  cursor: pointer;
+  transition-duration: .5s;
+}
+ 
+#nav-left-thumbs:hover, #nav-right-thumbs:hover { background: lightgrey; }
+ 
+#pics-thumbs {
+  position: relative;
+  padding: 5px 0;
+  margin: 0 122px;
+  white-space: nowrap;
+  overflow: hidden;
+  transition-duration: .8s;
+}
+ 
+#pics-thumbs img {
+  padding: 5px;
+  margin: 0 2px;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0,0,0,.6);
+  cursor: pointer;
+  height: 75px;
+  transition-duration: .5s;
+}                 
+ 初始化插件
+
+在页面DOM元素加载完毕之后，通过下面的方法来初始化该jQuery轮播图插件。
+$(document).ready(function() {
+  $('#view').setZoomPicture({
+    thumbsContainer: '#pics-thumbs',
+    prevContainer: '#nav-left-thumbs',
+    nextContainer: '#nav-right-thumbs',
+    zoomContainer: '#zoom'
+  }); 
+});                  
+你也可以通过配置参数来设置放大镜的缩放级数。
+$(document).ready(function() {
+  $('#view').setZoomPicture({
+    thumbsContainer: '#pics-thumbs',
+    prevContainer: '#nav-left-thumbs',
+    nextContainer: '#nav-right-thumbs',
+    zoomContainer: '#zoom',
+    zoomLevel: 2
+  }); 
+});                  
+你还可以自定义加载图片时显示的信息。
+$(document).ready(function() {
+  $('#view').setZoomPicture({
+    thumbsContainer: '#pics-thumbs',
+    prevContainer: '#nav-left-thumbs',
+    nextContainer: '#nav-right-thumbs',
+    zoomContainer: '#zoom',
+    loadMsg: 'Loading...'
+  }); 
+});
+
+http://www.htmleaf.com/jQuery/Slideshow-Scroller/201712214891.html                

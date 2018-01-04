@@ -1,81 +1,121 @@
 body { background: #f5f5f5; font-family: "Microsoft Yahei"; }
 
-#main .top { height: 60px; line-height: 60px; font-size: 14px; padding-left: 28px; }
+#main .main1 { height: 60px; line-height: 60px; font-size: 12px; padding-left: 28px; color: #777; }
 
-#main .top i { float: right; }
+#main .main1 i { float: right; margin-right: 18px; }
 
-#main .top i a { background: url(../img/qq.gif) no-repeat; padding-left: 28px; }
+#main .main1 i a { background: url(../img/qq.gif) no-repeat; padding-left: 28px; color: #777; }
 
-#main .l { width: 220px; }
+#main .main2 { height: 540px; border: 1px solid #ccc; }
 
-#main .l h1 { width: 190px; background-color: #fe587e; line-height: 38px; font-size: 14px; color: #fff; padding-left: 15px; }
+#main .main2 .l { width: 365px; height: 513px; border: 1px solid #ccc; }
 
-#main .l .ul { width: 190px; }
+#main .main2 .m { padding-left: 20px; padding-top: 8px; width: 555px; height: 487px; border: 1px solid #ccc; }
 
-#main .l .ul li { height: 37px; line-height: 37px; font-size: 14px; padding-left: 22px; border-top: 0 none; }
+#main .main2 .m .title { font-size: 16px; color: #444; height: 24px; line-height: 38px; }
 
-#main .l .banner { width: 220px; height: 238.5px; overflow: hidden; position: relative; }
+#main .main2 .m .price1 { font-size: 13px; line-height: 65px; }
 
-#main .l .bottom { margin-top: 15px; }
+#main .main2 .m .price1 span { padding-left: 20px; text-decoration: line-through; }
 
-#main .l .bottom .clearfix li { width: 110px; height: 41px; text-align: center; line-height: 41px; border-top: 2px solid #d6d6d6; border-right: 1px solid #f1f1f1; border-bottom: 1px solid #f1f1f1; font-size: 14px; }
+#main .main2 .m .price1 i { float: right; margin-right: 28px; }
 
-#main .l .bottom .clearfix .active { border-top: 2px solid #fe587e; border-bottom: 1px solid #fff; }
+#main .main2 .m .price2 span { padding-left: 20px; font-size: 26px; line-height: 26px; color: #fe587e; line-height: 22px; }
 
-#main .l .bottom .tab .tab1 li, #main .l .bottom .tab .tab2 li { width: 220px; height: 81px; border: 1px solid #ccc; margin-top: 3px; margin-left: 3px; overflow: hidden; padding: 10px; }
+#main .main2 .m .sell { line-height: 50px; }
 
-#main .l .bottom .tab .tab1 li .l, #main .l .bottom .tab .tab2 li .l { display: inline-block; width: 60px; height: 60px; float: left; margin-right: 20px; }
+#main .main2 .m .sell span, #main .main2 .m .sell i { color: #fe587e; padding-right: 150px; font-size: 13px; }
 
-#main .l .bottom .tab .tab1 li .l img, #main .l .bottom .tab .tab2 li .l img { width: 60px; height: 60px; }
+#main .main2 .m .serve { line-height: 48px; }
 
-#main .l .bottom .tab .tab1 li p, #main .l .bottom .tab .tab2 li p { display: inline-block; width: 114px; padding: 3px 0px; }
+#main .main2 .m .serve a { font-size: 13px; margin-left: 30px; }
 
-#main .l .bottom .tab .tab1 li p span, #main .l .bottom .tab .tab2 li p span { line-height: 18px; }
+#main .main2 .m .serve i { color: #fff; width: 18px; border-radius: 5px; padding: 3px; height: 18px; }
 
-#main .l .bottom .tab .tab1 li .sp1, #main .l .bottom .tab .tab2 li .sp1 { color: #fe587e; font-size: 15px; margin-right: 10px; font-weight: bold; }
+#main .main2 .m .serve .i1 { background: #f76514; }
 
-#main .l .bottom .tab .tab2 { display: none; }
+#main .main2 .m .serve .i2 { background: #00c613; }
 
-#main .r { width: 962px; }
+#main .main2 .m .serve .i3 { background: #5237e2; }
 
-#main .r .lis { overflow: hidden; width: 962px; margin-top: 17px; }
+#main .main2 .m .num { line-height: 31px; padding-top: 42px; }
 
-#main .r .lis span { width: 80px; float: left; color: #d7232a; margin: 3px 0; font-weight: bold; font-size: 12px; }
+#main .main2 .m .num span { float: left; }
 
-#main .r .lis ul li { float: left; margin: 0px 16px; font-size: 14px; }
+#main .main2 .m .num .jian { width: 20px; height: 30px; margin-left: 68px; cursor: pointer; }
 
-#main .r .lis ul li:nth-child(1) { background-color: #fe587e; width: 52px; height: 24px; border-radius: 5px; text-align: center; line-height: 24px; }
+#main .main2 .m .num input { width: 30px; height: 30px; padding-left: 11px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; font-size: 14px; color: #444; }
 
-#main .r .lis ul li:nth-child(1) a { color: #fff; }
+#main .main2 .m .num .jia { width: 20px; height: 30px; cursor: pointer; }
 
-#main .r .sort { margin-top: 43px; }
+#main .main2 .m .btn { line-height: 108px; }
 
-#main .r .sort span { color: #666; }
+#main .main2 .m .btn button { width: 142px; height: 38px; border-radius: 5px; background-color: #ffeded; color: #fe587e; border: 1px solid #fe587e; line-height: 38px; text-align: center; margin-left: 18px; cursor: pointer; }
 
-#main .r .list ul { margin-top: 38px; }
+#main .main2 .m .btn .btn2 { line-height: 22px; background: #fe587e; border: 1px solid #fe587e; color: #fff; font-style: 13px; }
 
-#main .r .list ul li { width: 232px; height: 357px; border: 1px solid #ccc; background-color: #fff; margin-right: 5px; position: relative; padding: 12px 17px; }
+#main .main2 .r { width: 260px; height: 540px; border: 1px solid #ccc; }
 
-#main .r .list ul li .img { display: block; width: 180px; height: 180px; border: 1px solid #ccc; }
+#main .main2 .r .top { width: 260px; height: 92px; }
 
-#main .r .list ul li .qty { width: 252px; height: 36px; position: absolute; left: 18px; top: 155px; }
+#main .main2 .r .bottom { width: 258px; height: 300px; }
 
-#main .r .list ul li .qty i { display: inline-block; width: 150px; height: 20px; border-radius: 10px; background: url(../img/jdtbg.png) no-repeat; }
+#main .main2 .r .img { width: 260px; height: 132px; }
 
-#main .r .list ul li .qty span { display: inline-block; float: right; margin-right: 26px; }
+#main .main3 h3 { background-color: #fff; border-top: 2px solid #ccb; margin-top: 8px; font-size: 17px; height: 42px; padding-left: 18px; line-height: 42px; margin-bottom: 20px; }
 
-#main .r .list ul li .money { padding: 13px 0px; }
+#main .main3 .l { width: 228px; min-height: 30px; }
 
-#main .r .list ul li .money .sp1 { color: #fe587e; font-size: 22px; margin-right: 2px; }
+#main .main3 .l h1 { width: 190px; background-color: #fe587e; line-height: 38px; font-size: 14px; color: #fff; padding-left: 15px; }
 
-#main .r .list ul li .money .sp2 { color: #999; font-size: 14px; text-decoration: line-through; }
+#main .main3 .l .ul { width: 190px; }
 
-#main .r .list ul li .money .sp3, #main .r .list ul li .money .sp4 { font-size: 12px; margin-right: 48px; }
+#main .main3 .l .ul li { height: 37px; line-height: 37px; font-size: 14px; padding-left: 22px; border-top: 0 none; }
 
-#main .r .list ul li .money i { display: inline-block; margin-top: 12px; width: 80px; height: 32px; text-align: center; background-color: #fe587e; border-radius: 5px; line-height: 32px; }
+#main .main3 .l .banner { width: 220px; height: 238.5px; overflow: hidden; position: relative; }
 
-#main .r .list ul li .money i a { color: #fff; }
+#main .main3 .l .bottom { margin-top: 15px; }
 
-#main .r .list ul li p a { font-size: 15px; color: #444; line-height: 25px; height: 50px; }
+#main .main3 .l .bottom .clearfix li { width: 110px; height: 41px; text-align: center; line-height: 41px; border-top: 2px solid #d6d6d6; border-right: 1px solid #f1f1f1; border-bottom: 1px solid #f1f1f1; font-size: 14px; }
 
-#main .r .list ul li:hover { box-shadow: 0px 0px 5px #ccc; transform: translate(0, -10px); transition: .2s all linear; }
+#main .main3 .l .bottom .clearfix .active { border-top: 2px solid #fe587e; border-bottom: 1px solid #fff; }
+
+#main .main3 .l .bottom .tab .tab1 li, #main .main3 .l .bottom .tab .tab2 li { width: 220px; height: 81px; border: 1px solid #ccc; margin-top: 3px; margin-left: 3px; overflow: hidden; padding: 10px; }
+
+#main .main3 .l .bottom .tab .tab1 li .l, #main .main3 .l .bottom .tab .tab2 li .l { display: inline-block; width: 60px; height: 60px; float: left; margin-right: 20px; }
+
+#main .main3 .l .bottom .tab .tab1 li .l img, #main .main3 .l .bottom .tab .tab2 li .l img { width: 60px; height: 60px; }
+
+#main .main3 .l .bottom .tab .tab1 li p, #main .main3 .l .bottom .tab .tab2 li p { display: inline-block; width: 114px; padding: 3px 0px; }
+
+#main .main3 .l .bottom .tab .tab1 li p span, #main .main3 .l .bottom .tab .tab2 li p span { line-height: 18px; }
+
+#main .main3 .l .bottom .tab .tab1 li .sp1, #main .main3 .l .bottom .tab .tab2 li .sp1 { color: #fe587e; font-size: 15px; margin-right: 10px; font-weight: bold; }
+
+#main .main3 .l .bottom .tab .tab2 { display: none; }
+
+#main .main3 .r { width: 962px; min-height: 600px; }
+
+#main .main3 .r > ul { background-color: #fff; font-size: 13px; margin-bottom: 12px; padding-left: 12px; height: 38px; line-height: 38px; }
+
+#main .main3 .r > ul li { padding: 0px 14px; border-right: 1px solid #f1f1f1; }
+
+#main .main3 .r > ul .active { border-top: 2px solid #bbc; }
+
+#main .main3 .r > ul i { float: right; margin-right: 18px; }
+
+#main .main3 .r > ul i a { background: url(../img/qq.gif) no-repeat; padding-left: 28px; color: #777; }
+
+#main .main3 .r h3 { border-top: 2px solid #58bc58; }
+
+#main .main3 .r .comment { display: none; }
+
+#main .main3 .r .comment ul li { margin-bottom: 12px; background-color: #fff; padding: 0px 20px; height: 34px; line-height: 34px; }
+
+#main .main3 .r .comment .sub { margin-top: 40px; }
+
+#main .main3 .r .comment .sub textarea { width: 100%; font-size: 15px; padding: 10px; border-radius: 10px; }
+
+#main .main3 .r .comment .sub button { float: right; margin-right: 28px; width: 80px; height: 32px; background-color: #58bc58; border-radius: 5px; margin-top: 20px; cursor: pointer; }
+
+#main .main3 .r .req { display: none; }

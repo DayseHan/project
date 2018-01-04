@@ -1,3 +1,23 @@
+
+.link{border:1px solid #ccc;height: 205px;
+    .contain{
+        dl{float: left;padding: 2px 102px 0px 68px;border-right:1px dashed #e7e7e7;height: 168px; margin-top: 18px;
+            dt{font-size: 15px;font-weight: bold;color:#444;height: 40px;line-height: 40px;}
+            dd{font-size: 12px;height: 28px;line-height: 28px;padding-left: 5px;a:hover{color:#fe587e;}}
+        }
+        .fr{padding-left: 12px;padding-top: 56px;position: relative;width: 240px;
+            img{position: absolute;left: 0px;top: 14px;z-index:-2;}
+            p{padding-left: 38px;
+                strong{font-size: 18px;color:#fe587e;}
+                i{padding-left: 38px;color:#fe587e;}
+            }
+            span{color:red;}
+            input{width: 100px;height: 23px;background: url(../img/btn_bg_red.png) no-repeat;border-radius:3px;color:#fff;margin-top: 13px;margin-bottom: 5px;}
+            h3{color:blue;font-weight: 600;}
+        }
+    }  
+}
+
 .footer{
     padding: 20px;
     background-color: #999;

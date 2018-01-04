@@ -3,8 +3,56 @@
 <head>
     <meta charset="UTF-8" />
     <title>cart</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/cart.css" />
+    <link rel="stylesheet" type="text/css" href="../css/header.css" />
+    <link rel="stylesheet" type="text/css" href="../css/footer.css" />
+    <script src="../lib/jquery-3.2.1.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/footer.js"></script>
+    <script src="../js/cart.js"></script>
 </head>
 <body>
-    
+    <div id="header"></div>
+    <div id="main">
+        <div class="contain">
+            <h3>全部商品(0)</h3>
+            <dl class="cart">
+                <dt>
+                    <i ><input type="checkbox" id="all">全选</i>
+                    <i >商品名称</i>
+                    <i >单价</i>
+                    <i >数量</i>
+                    <i >总价</i>
+                    <i >操作</i>
+                </dt>
+                <dt>
+                    <a href="../index.html"></a>
+                </dt>
+                <dt>
+                    <i ><input type="checkbox" id="all">全选</i>
+                    <i ><a href="#">删除所选商品</a></i>
+                    <i ><a href="#">继续购物</a></i>
+                    <i >已选商品(0)件</i>
+                    <i >合计￥0.00</i>
+                    <i ><a href="#">去结算</a></i>
+                </dt>
+            </dl>
+
+            <div class="tab">
+                <ul class="clearfix">
+                    <li class="fl">热卖</li>
+                    <li class="fl">最近浏览商品</li>
+                </ul>
+                <div>
+                    <ul>1</ul>
+                    <ul>2</ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="link"></div>
+    <div id="footer"></div>
 </body>
 </html>
