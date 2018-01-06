@@ -1,8 +1,11 @@
 // body{background-color: #ccc;}
 body{font-family: "Microsoft Yahei";}
-#banner{border:1px solid #ccc;height: 450px;
+#banner{border:1px solid #ccc;height: 450px;position: relative;
     .contain{position: relative;
-        .banner{width: 740px;height: 450px;border:1px solid #ccc;position: absolute;left: 230px;}
+        >i{display: inline-block;width: 259px;height: 450px;}
+        i:nth-child(1){background: url(../img/banner_l.png) no-repeat;position: absolute;left: -259px;}
+        i:nth-child(2){background: url(../img/banner_r.png) no-repeat;position: absolute;right: -259px;}
+        .banner{width: 740px;height: 450px;border:1px solid #ccc;position: absolute;left: 230px;top: 0px;}
         .baner-r{width:226px; height:435px; position:absolute; top:8px; right:0; overflow:hidden; }
         .baner-r .baner-r-t{width:230px; height: 198px; border:1px solid #e6e6e6;}
         .baner-r .baner-r-t .baner-r-t-txt{height:36px; border-bottom:1px solid #e6e6e6;background:#fff}
@@ -82,6 +85,8 @@ body{font-family: "Microsoft Yahei";}
                         }
                         .sp1{color:#fe587e;font-size: 15px;margin-right: 10px;font-weight: bold;}
                     }
+                    img{width: 70px;
+                    height: 70px;}
             }
         }
         .time{height: 454px;border:1px solid red;
@@ -89,6 +94,8 @@ body{font-family: "Microsoft Yahei";}
                 span{background-color: #1B1614;margin: 0px 5px;display: inline-block;height: 53px;width: 44px;border-radius:8px;text-align: center;font-weight: 600;}
                 i{font-size: 16px;color:#444;}
             }
+            img{width: 156px;
+            height: 156px;}
         }
         .act{height: 653px;border:1px solid red;}
         #L9{
@@ -125,13 +132,15 @@ body{font-family: "Microsoft Yahei";}
                         .l{display: inline-block;width: 160px;height: 150px;float: left}
                         p{display: inline-block;width: 173px;
                         padding: 13px 0px;
-                        span{line-height: 40px;}
+                        span{display: inline-block;line-height: 23px;width:133px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
                         img{width: 40px;display: inline-block;float: right;
                         height: 40px;}
                         .sp1{color:#444;font-size: 22px;margin-right: 10px;font-weight: bold;}
                         .sp2{color:#999;font-size: 14px;text-decoration: line-through;}
                         i{display: inline-block;width: 55px;height: 28px;text-align: center;background-color: #fe587e;border-radius:5px;line-height: 28px;margin: 10px 28px 0px 0px;a{color:#fff;}}
                         }
+                        a{img{width: 140px;height: 140px;}}
+                        
                     }
                     li:hover{
                         box-shadow: 0px 0px 5px #ccc;
@@ -143,6 +152,7 @@ body{font-family: "Microsoft Yahei";}
             .bottom{
                 ul{height: 239px;padding-top: 8px;
                     li{ width: 234px;height: 229px;float: left;margin-right: 7px;background-color: #fff;position: relative;text-align: center;
+                        a{img{width: 150px;height: 150px;}}
                         .hot{display: inline-block;position: absolute;right: 10px;top: 10px;
                             img{width: 40px;height: 40px; }
                         }
@@ -231,24 +241,6 @@ body{font-family: "Microsoft Yahei";}
         li:hover{background-color: #fe587e;}
     }
 }
-// #link{border:1px solid #ccc;height: 205px;
-//     .contain{
-//         dl{float: left;padding: 2px 102px 0px 68px;border-right:1px dashed #e7e7e7;height: 168px; margin-top: 18px;
-//             dt{font-size: 15px;font-weight: bold;color:#444;height: 40px;line-height: 40px;}
-//             dd{font-size: 12px;height: 28px;line-height: 28px;padding-left: 5px;a:hover{color:#fe587e;}}
-//         }
-//         .fr{padding-left: 12px;padding-top: 56px;position: relative;width: 240px;
-//             img{position: absolute;left: 0px;top: 14px;z-index:-2;}
-//             p{padding-left: 38px;
-//                 strong{font-size: 18px;color:#fe587e;}
-//                 i{padding-left: 38px;color:#fe587e;}
-//             }
-//             span{color:red;}
-//             input{width: 100px;height: 23px;background: url(../img/btn_bg_red.png) no-repeat;border-radius:3px;color:#fff;margin-top: 13px;margin-bottom: 5px;}
-//             h3{color:blue;font-weight: 600;}
-//         }
-//     }  
-// }
 
 #header .nav3 .contain .two{display: block;}
 

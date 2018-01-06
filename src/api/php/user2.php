@@ -7,17 +7,50 @@
     // var_dump($username);
     // var_dump($password);
     // 编写sql语句
-        $sql = "select username from users where username='$username'";
-        // 执行sql语句query(),得到一个：查询结果集
-        $result = $conn->query($sql);
-        // 使用查询结果集
-            
+        
+    
+
+    switch($type){
+        case 'reg':$sql = "insert into users(username,password) values('$username','$password')";
+            $result = $conn->query($sql);
+            echo "true";
+        break;
+
+        case 'del':$sql = "DELETE FROM $tab where id=$id";
+            $result = excute($sql);
+        break;
+
+        case 'update':$sql = "update $tab set username='$username',password='$password',phone='$phone',age='$age',userCity='$userCity',info='$info' where id='$id'";
+            $result = excute($sql);
+            var_dump($sql);
+
+        break;
+
+        case 'check':
+            // $sql = "select * from $tab";
+            $sql = "select * from users where username = '$username'";
+            $result = $conn->query($sql);
             if($result->num_rows>0){
-                echo '$result';
-            }else{
-                echo "false"
+                echo "true";
             }
-     
+            break;
+        break;
+
+        case 'login':
+            $sql = "select * from users where username='$username' and password='$password'";
+            // 执行sql语句query(),得到一个：查询结果集
+            $result = $conn->query($sql);
+            // 使用查询结果集
+            if($result->num_rows>0){
+                echo "$result";
+            }
+        break;
+    }
+
+
+
+
+
     //释放查询结果集，避免资源浪费
     // $result->close();
     // 关闭数据库，避免资源浪费

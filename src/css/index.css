@@ -1,10 +1,16 @@
 body { font-family: "Microsoft Yahei"; }
 
-#banner { border: 1px solid #ccc; height: 450px; }
+#banner { border: 1px solid #ccc; height: 450px; position: relative; }
 
 #banner .contain { position: relative; }
 
-#banner .contain .banner { width: 740px; height: 450px; border: 1px solid #ccc; position: absolute; left: 230px; }
+#banner .contain > i { display: inline-block; width: 259px; height: 450px; }
+
+#banner .contain i:nth-child(1) { background: url(../img/banner_l.png) no-repeat; position: absolute; left: -259px; }
+
+#banner .contain i:nth-child(2) { background: url(../img/banner_r.png) no-repeat; position: absolute; right: -259px; }
+
+#banner .contain .banner { width: 740px; height: 450px; border: 1px solid #ccc; position: absolute; left: 230px; top: 0px; }
 
 #banner .contain .baner-r { width: 226px; height: 435px; position: absolute; top: 8px; right: 0; overflow: hidden; }
 
@@ -104,6 +110,8 @@ body { font-family: "Microsoft Yahei"; }
 
 #main .contain .min .hot2 li .sp1 { color: #fe587e; font-size: 15px; margin-right: 10px; font-weight: bold; }
 
+#main .contain .min .hot2 img { width: 70px; height: 70px; }
+
 #main .contain .time { height: 454px; border: 1px solid red; }
 
 #main .contain .time #group_buy { width: 300px; height: 53px; color: #fff; font-size: 22px; line-height: 53px; display: inline-block; }
@@ -111,6 +119,8 @@ body { font-family: "Microsoft Yahei"; }
 #main .contain .time #group_buy span { background-color: #1B1614; margin: 0px 5px; display: inline-block; height: 53px; width: 44px; border-radius: 8px; text-align: center; font-weight: 600; }
 
 #main .contain .time #group_buy i { font-size: 16px; color: #444; }
+
+#main .contain .time img { width: 156px; height: 156px; }
 
 #main .contain .act { height: 653px; border: 1px solid red; }
 
@@ -154,7 +164,7 @@ body { font-family: "Microsoft Yahei"; }
 
 #main .contain #L10 .top ul li p, #main .contain #L11 .top ul li p { display: inline-block; width: 173px; padding: 13px 0px; }
 
-#main .contain #L10 .top ul li p span, #main .contain #L11 .top ul li p span { line-height: 40px; }
+#main .contain #L10 .top ul li p span, #main .contain #L11 .top ul li p span { display: inline-block; line-height: 23px; width: 133px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 
 #main .contain #L10 .top ul li p img, #main .contain #L11 .top ul li p img { width: 40px; display: inline-block; float: right; height: 40px; }
 
@@ -166,11 +176,15 @@ body { font-family: "Microsoft Yahei"; }
 
 #main .contain #L10 .top ul li p i a, #main .contain #L11 .top ul li p i a { color: #fff; }
 
+#main .contain #L10 .top ul li a img, #main .contain #L11 .top ul li a img { width: 140px; height: 140px; }
+
 #main .contain #L10 .top ul li:hover, #main .contain #L11 .top ul li:hover { box-shadow: 0px 0px 5px #ccc; transform: translate(0, -4px); transition: .2s all linear; }
 
 #main .contain #L10 .bottom ul, #main .contain #L11 .bottom ul { height: 239px; padding-top: 8px; }
 
 #main .contain #L10 .bottom ul li, #main .contain #L11 .bottom ul li { width: 234px; height: 229px; float: left; margin-right: 7px; background-color: #fff; position: relative; text-align: center; }
+
+#main .contain #L10 .bottom ul li a img, #main .contain #L11 .bottom ul li a img { width: 150px; height: 150px; }
 
 #main .contain #L10 .bottom ul li .hot, #main .contain #L11 .bottom ul li .hot { display: inline-block; position: absolute; right: 10px; top: 10px; }
 

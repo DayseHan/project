@@ -46,16 +46,20 @@
     .nav3{background-color: #F7F7F7;border-bottom:2px solid #fe587e;
         .contain{position: relative;height: 42px; line-height: 42px;
             .three{display: none;width: 712px;height: 450px;border:1px solid #fe587e;
-                    position: absolute;left: 230px;top: 42px;z-index:999;
+                    position: absolute;left: 230px;top: 42px;z-index:999;background-color: #fff;padding: 25px 55px;
+                    a{display: inline-block;line-height: 50px;font-size: 13px;padding: 0px 25px ;}
             }
-            .two{width: 230px;height: 450px;border:1px solid #ccc;position: absolute;left: 0px;top: 42px;display: none;color:#fff;background-color: #fe587e;
-                li{height: 50px;border:1px solid #ccc;}
+            .two{width: 230px;height: 450px;border:1px solid #ccc;position: absolute;left: 0px;top: 42px;display: none;background-color: #fe587e;z-index:999;
+                li{height: 56px;border:1px solid #ccc;list-style: none;cursor: pointer;line-height: 56px;
+                    a{display: inline-block;width: 95px;height: 100%;padding-left: 13px;font-size: 16px;color:#fff;}
+                   
+                }
                 .active{
                         background: url(../img/alpha.png);
                         color: #fe587e;
                 }
             }
-            .all_nav{width: 230px;height: 42px;float: left;background-color: #fe587e;font-size: 14px;text-align: center;color:#fff;}
+            .all_nav{width: 230px;height: 42px;float: left;background-color: #fe587e;font-size: 14px;color:#fff;padding-left: 28px;font-size: 15px;cursor: pointer;}
             .ul_nav{float: left;
                 li{float: left;font-size: 15px;
                     a{padding: 0px 20px;color:#444;}

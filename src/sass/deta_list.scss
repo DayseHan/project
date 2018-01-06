@@ -4,7 +4,7 @@ body{
 }
 #main{
     .main1{
-        height: 60px;line-height: 60px;font-size: 12px;padding-left: 28px;color:#777;
+        height: 60px;line-height: 60px;font-size: 13px;padding-left: 14px;color:#777;
         i{float: right;margin-right: 18px;
             a{background: url(../img/qq.gif) no-repeat;padding-left: 28px;color:#777;}
         }
@@ -46,7 +46,11 @@ body{
             }
         }
         .r{width: 260px;height: 540px;border:1px solid #ccc;
-            .top{width: 260px;height: 92px;}
+            .top{width: 260px;height: 92px;line-height: 92px;
+                background: #fcfcfc;
+                img{display: inline-block;}
+                span{display: inline-block;width: 130px;text-align: center;}
+            }
             .bottom{
                 width: 258px;height: 300px;
             }

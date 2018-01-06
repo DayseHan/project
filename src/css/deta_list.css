@@ -1,6 +1,6 @@
 body { background: #f5f5f5; font-family: "Microsoft Yahei"; }
 
-#main .main1 { height: 60px; line-height: 60px; font-size: 12px; padding-left: 28px; color: #777; }
+#main .main1 { height: 60px; line-height: 60px; font-size: 13px; padding-left: 14px; color: #777; }
 
 #main .main1 i { float: right; margin-right: 18px; }
 
@@ -56,7 +56,11 @@ body { background: #f5f5f5; font-family: "Microsoft Yahei"; }
 
 #main .main2 .r { width: 260px; height: 540px; border: 1px solid #ccc; }
 
-#main .main2 .r .top { width: 260px; height: 92px; }
+#main .main2 .r .top { width: 260px; height: 92px; line-height: 92px; background: #fcfcfc; }
+
+#main .main2 .r .top img { display: inline-block; }
+
+#main .main2 .r .top span { display: inline-block; width: 130px; text-align: center; }
 
 #main .main2 .r .bottom { width: 258px; height: 300px; }
 
