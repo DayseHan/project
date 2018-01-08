@@ -6,11 +6,13 @@ body { background: #f5f5f5; font-family: "Microsoft Yahei"; }
 
 #main .main1 i a { background: url(../img/qq.gif) no-repeat; padding-left: 28px; color: #777; }
 
-#main .main2 { height: 540px; border: 1px solid #ccc; }
+#main .main2 { height: 540px; padding-top: 14px; padding-left: 12px; }
 
-#main .main2 .l { width: 365px; height: 513px; border: 1px solid #ccc; }
+#main .main2 .l { width: 365px; height: 513px; }
 
-#main .main2 .m { padding-left: 20px; padding-top: 8px; width: 555px; height: 487px; border: 1px solid #ccc; }
+#main .main2 .l .goods img { width: 350px; }
+
+#main .main2 .m { padding-left: 20px; padding-top: 8px; width: 555px; height: 487px; }
 
 #main .main2 .m .title { font-size: 16px; color: #444; height: 24px; line-height: 38px; }
 
@@ -48,13 +50,15 @@ body { background: #f5f5f5; font-family: "Microsoft Yahei"; }
 
 #main .main2 .m .num .jia { width: 20px; height: 30px; cursor: pointer; }
 
-#main .main2 .m .btn { line-height: 108px; }
+#main .main2 .m .btn { line-height: 108px; position: relative; }
+
+#main .main2 .m .btn img { width: 38px; position: absolute; top: 36px; left: 181px; z-index: -1; }
 
 #main .main2 .m .btn button { width: 142px; height: 38px; border-radius: 5px; background-color: #ffeded; color: #fe587e; border: 1px solid #fe587e; line-height: 38px; text-align: center; margin-left: 18px; cursor: pointer; }
 
 #main .main2 .m .btn .btn2 { line-height: 22px; background: #fe587e; border: 1px solid #fe587e; color: #fff; font-style: 13px; }
 
-#main .main2 .r { width: 260px; height: 540px; border: 1px solid #ccc; }
+#main .main2 .r { width: 260px; height: 540px; }
 
 #main .main2 .r .top { width: 260px; height: 92px; line-height: 92px; background: #fcfcfc; }
 
@@ -84,7 +88,7 @@ body { background: #f5f5f5; font-family: "Microsoft Yahei"; }
 
 #main .main3 .l .bottom .clearfix .active { border-top: 2px solid #fe587e; border-bottom: 1px solid #fff; }
 
-#main .main3 .l .bottom .tab .tab1 li, #main .main3 .l .bottom .tab .tab2 li { width: 220px; height: 81px; border: 1px solid #ccc; margin-top: 3px; margin-left: 3px; overflow: hidden; padding: 10px; }
+#main .main3 .l .bottom .tab .tab1 li, #main .main3 .l .bottom .tab .tab2 li { width: 220px; height: 81px; margin-top: 3px; margin-left: 3px; overflow: hidden; padding: 10px; }
 
 #main .main3 .l .bottom .tab .tab1 li .l, #main .main3 .l .bottom .tab .tab2 li .l { display: inline-block; width: 60px; height: 60px; float: left; margin-right: 20px; }
 
@@ -123,3 +127,5 @@ body { background: #f5f5f5; font-family: "Microsoft Yahei"; }
 #main .main3 .r .comment .sub button { float: right; margin-right: 28px; width: 80px; height: 32px; background-color: #58bc58; border-radius: 5px; margin-top: 20px; cursor: pointer; }
 
 #main .main3 .r .req { display: none; }
+
+.gds-zoom-big img { width: 655px; }

@@ -13,17 +13,9 @@
     switch($type){
         case 'reg':$sql = "insert into users(username,password) values('$username','$password')";
             $result = $conn->query($sql);
-            echo "true";
-        break;
-
-        case 'del':$sql = "DELETE FROM $tab where id=$id";
-            $result = excute($sql);
-        break;
-
-        case 'update':$sql = "update $tab set username='$username',password='$password',phone='$phone',age='$age',userCity='$userCity',info='$info' where id='$id'";
-            $result = excute($sql);
-            var_dump($sql);
-
+            if($result){
+                echo "true";
+            }
         break;
 
         case 'check':

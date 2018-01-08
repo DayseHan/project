@@ -112,7 +112,7 @@
 				}else if(top > $smallImg.outerHeight()-$zoom.outerHeight()){
 					top = $smallImg.outerHeight()-$zoom.outerHeight();
 				}
-
+				console.log(left,top)
 
 				$zoom.css({
 					left:left,
@@ -120,6 +120,7 @@
 				});
 
 				$bigImg.css({
+					// left:-left*ratio,
 					left:-left*ratio,
 					top:-top*ratio
 				})

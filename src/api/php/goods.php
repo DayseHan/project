@@ -10,28 +10,69 @@
     $list = isset($_GET['_data']) ? $_GET['_data'] : 'null';
     $goods_list_l = isset($_GET['pos']) ? $_GET['pos'] : 'null';
     $id = isset($_GET['id']) ? $_GET['id'] : 'null';
-    // var_dump($username);
-    // var_dump($password);
+    $search = isset($_GET['search']) ? $_GET['search'] : 'null';
+    $cart = isset($_GET['search']) ? $_GET['search'] : 'null';
+    $cart_id = isset($_GET['cart_id']) ? $_GET['cart_id'] : 'null';
+    $qty = isset($_GET['qty']) ? $_GET['qty'] : '5';
+    $page = isset($_GET['page']) ? $_GET['page'] : '1';
     // 编写sql语句
 
     switch($type){
-        case 'reg':$sql = "insert into users(username,password) values('$username','$password')";
+
+        case 'del': $sql = "select cart from users where username = '$username'";
             $result = $conn->query($sql);
-            echo "true";
+
+            $row = $result->fetch_all(MYSQLI_ASSOC);
+            $str = $row[0]["cart"];
+            $arr = json_decode($str);
+            // var_dump($arr);
+            
+            $key = array_search($id, $arr);
+            if ($key !== false)
+                array_splice($arr, $key, 1);
+
+            $str = json_encode($arr);
+            $sql = "update users set cart='$str' where username='$username'";
+            $res = $conn->query($sql);
+            // // var_dump($result);
+            echo json_encode($res,JSON_UNESCAPED_UNICODE);
         break;
 
-        case 'del':$sql = "DELETE FROM $tab where id=$id";
-            $result = excute($sql);
+        case 'add': $sql = "select cart from users where username = '$username'";
+            $result = $conn->query($sql);
+
+            $row = $result->fetch_all(MYSQLI_ASSOC);
+            $str = $row[0]["cart"];
+            $arr = json_decode($str);
+            $len = count($arr);
+            $arr[$len] = (int)$id;
+            $str = json_encode($arr);
+            $sql = "update users set cart='$str' where username='$username'";
+            $res = $conn->query($sql);
+            // var_dump($result);
+            echo json_encode($res,JSON_UNESCAPED_UNICODE);
         break;
 
-        case 'update':$sql = "update $tab set username='$username',password='$password',phone='$phone',age='$age',userCity='$userCity',info='$info' where id='$id'";
-            $result = excute($sql);
-            var_dump($sql);
+        case 'cart':
+            $sql = "select cart from users where username = '$username'";
+
+            $result = $conn->query($sql);
+                $row = $result->fetch_all(MYSQLI_ASSOC); 
+                echo json_encode($row,JSON_UNESCAPED_UNICODE);
+            
+        break;
+
+        case 'cart_search':
+            $sql = "select * from goods where id = '$cart_id'";
+
+            $result = $conn->query($sql);
+            $row = $result->fetch_all(MYSQLI_ASSOC); 
+            echo json_encode($row,JSON_UNESCAPED_UNICODE);
 
         break;
 
-        case 'nav':
-            $sql = "select * from nav";
+        case 'search':
+            $sql = "select * from goods where name like '%$search%' or type like '%$search%'";
             $result = $conn->query($sql);
             $row = $result->fetch_all(MYSQLI_ASSOC);
             echo json_encode($row,JSON_UNESCAPED_UNICODE);
@@ -50,9 +91,14 @@
             $sql = "select * from goods where type = '$list'";
             $result = $conn->query($sql);
             
-            $row = $result->fetch_all(MYSQLI_ASSOC);
+            $arr_data = $result->fetch_all(MYSQLI_ASSOC);
+            // $arr_data = json_decode($row);
             
-            echo json_encode($row,JSON_UNESCAPED_UNICODE);
+    $res = array(
+        'data'=>array_slice($arr_data, ($page-1)*$qty,$qty),
+        'total'=>count($arr_data)
+    );
+            echo json_encode($res,JSON_UNESCAPED_UNICODE);
         break;
 
         case 'goods_list_l':
@@ -88,10 +134,10 @@
         break;
     }
 
-    //释放查询结果集，避免资源浪费
-    // $result->close();
+    // 释放查询结果集，避免资源浪费
+    $result->close();
     // 关闭数据库，避免资源浪费
-    // $conn->close();
+    $conn->close();
     
     // 返回数组
     // $row = $result->fetch_all(MYSQLI_ASSOC);

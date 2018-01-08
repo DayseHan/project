@@ -38,6 +38,11 @@ body {
         }
     }
     .r{width: 962px;
+        #page{margin-top: 25px;float: right;margin-right: 30px;
+            i{width: 45px;height: 45px;line-height: 45px;text-align: center;display: inline-block;border-radius:5px;
+            }
+            .active{background: #ccc;}
+        }
         .lis{overflow: hidden;width: 962px;
             margin-top: 17px;
             span{width: 80px; float: left;color: #d7232a;margin: 3px 0;font-weight: bold;font-size: 12px;
@@ -55,8 +60,8 @@ body {
         }
         .list{
             ul{margin-top: 38px;
-                li{width: 232px;height: 357px;border:1px solid #ccc;background-color: #fff;margin-right: 5px;position: relative;padding: 12px 17px;
-                    .img{display: block;width: 180px;height: 180px;border:1px solid #ccc;
+                li{width: 232px;height: 357px;border:1.4px solid #fff;margin-right: 5px;position: relative;padding: 12px 17px;margin-top: 12px;
+                    .img{display: block;width: 180px;height: 180px;
                     }
                     .qty{width: 252px;height: 36px;position: absolute;left: 18px;top: 155px;
                         i{display: inline-block;width: 150px;height: 20px;border-radius:10px;background: url(../img/jdtbg.png) no-repeat}

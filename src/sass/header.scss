@@ -1,5 +1,5 @@
 #header{
-    border:1px solid #ccc;height: 255px;
+    height: 255px;
     color:#444;
     .header1{
         background-color: #eae9e9;
@@ -49,8 +49,8 @@
                     position: absolute;left: 230px;top: 42px;z-index:999;background-color: #fff;padding: 25px 55px;
                     a{display: inline-block;line-height: 50px;font-size: 13px;padding: 0px 25px ;}
             }
-            .two{width: 230px;height: 450px;border:1px solid #ccc;position: absolute;left: 0px;top: 42px;display: none;background-color: #fe587e;z-index:999;
-                li{height: 56px;border:1px solid #ccc;list-style: none;cursor: pointer;line-height: 56px;
+            .two{width: 230px;height: 450px;position: absolute;left: 0px;top: 42px;display: none;background-color: #fe587e;z-index:999;
+                li{height: 56px;list-style: none;cursor: pointer;line-height: 56px;
                     a{display: inline-block;width: 95px;height: 100%;padding-left: 13px;font-size: 16px;color:#fff;}
                    
                 }
@@ -67,7 +67,9 @@
                 }
             }
             #cart{width: 120px;height: 40px;float: right;line-height: 40px;text-align: center;background:#fe587e url(../img/jlt.png) no-repeat 10px -90px;
-                a{font-size: 14px;color:#fff;display: block;width: 120px;height: 40px;}
+                a{font-size: 14px;color:#fff;display: block;width: 120px;height: 40px;
+                    i{padding: 0px 3px;font-weight: 600;font-size: 16px;}
+                }
             }
         }
     }

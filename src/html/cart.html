@@ -7,17 +7,17 @@
     <link rel="stylesheet" type="text/css" href="../css/cart.css" />
     <link rel="stylesheet" type="text/css" href="../css/header.css" />
     <link rel="stylesheet" type="text/css" href="../css/footer.css" />
-    <script src="../lib/jquery-3.2.1.js"></script>
+    <!-- <script src="../lib/jquery-3.2.1.js"></script>
     <script src="../js/header.js"></script>
     <script src="../js/footer.js"></script>
-    <script src="../js/cart.js"></script>
+    <script src="../js/cart.js"></script> -->
 </head>
 <body>
     <div id="header"></div>
     <div id="main">
         <div class="contain">
             <h3>全部商品(0)</h3>
-            <dl class="cart">
+            <dl class="cart1">
                 <dt>
                     <i ><input type="checkbox" id="all">全选</i>
                     <i >商品名称</i>
@@ -26,9 +26,31 @@
                     <i >总价</i>
                     <i >操作</i>
                 </dt>
-                <dt>
+            </dl>
+
+           <dl class="cart2">
+                <dt class="moren">
                     <a href="../index.html"></a>
                 </dt>
+                <!-- <dt>
+                    <i ><input type="checkbox" id="all"></i>
+                    <i><img src="http://web.mama580.com/static/pic/product/180x180/20171225174331249.jpg" alt="" /></i>
+                    <i >美赞臣蓝臻婴儿配方奶粉900g罐装1阶段</i>
+                    <i >
+                        <span>442</span><br />
+                        <span>234</span>
+                    </i>
+                    <i >
+                        <button class="jian fl" value="-">-</button>
+                        <input type="text" class="fl" value="1"/>
+                        <button class="jia fl">+</button>
+                    </i>
+                    <i >总价</i>
+                    <i >X</i>
+                </dt> -->
+           </dl>
+
+            <dl class="cart3">
                 <dt>
                     <i ><input type="checkbox" id="all">全选</i>
                     <i ><a href="#">删除所选商品</a></i>
@@ -54,5 +76,6 @@
     </div>
     <div id="link"></div>
     <div id="footer"></div>
+    <script src="../js/require.js" data-main="../js/cart"></script>
 </body>
 </html>
