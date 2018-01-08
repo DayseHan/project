@@ -23,7 +23,7 @@ require.config({
 		carousel:['jquery'],
 		carousel:['jquery'],
 		header:['jquery'],
-		footer:['jquery'],
+		footer:['jquery']
 
 	}
 });
